@@ -18,6 +18,10 @@ Patch a running deployment with a new container image:
 
     kubectl patch deployment <deployment-name> -p'{"spec":{"template":{"spec":{"containers":[{"name":"<container-name>","image":"<image-name>"}]}}}}'
 
+Copy a file from a running pod:
+
+    kubectl cp <namespace>/<pod-id>:<pod-file-path> <local-file-path>
+
 ## Google Cloud
 
 Authenticate with application default credentials:
