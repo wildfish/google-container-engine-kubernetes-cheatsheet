@@ -2,6 +2,10 @@
 
 ## Kubernetes
 
+Show namespaces:
+
+    kubectl get ns
+    
 Show all events and watch for updates:
 
     kubectl get events -w
